@@ -85,5 +85,90 @@ public class Main {
 //        git branch -M main
 //        git remote add origin https://github.com/AiNga04/hoccode.git
 //        git push -u origin main
+
+//        Toán tử logic
+//        &&, ||, !(AND, OR, NOT)
+
+//        AND &&
+//        age1 >= 18 && age1 <= 30
+//        true && true => true
+//        true && false => false
+//        false && true => false
+//        false && false => false
+
+//        OR ||
+//        true || true => true
+//        true || false => true
+//        false || true => true
+//        false || false => false
+
+//        NOT !
+//        !true => false
+//        !false => true
+
+        int age1 = 23;
+
+        if(age1 >= 18 && age1 <= 22){
+            System.out.println("Tuổi hợp lệ!");
+        }else{
+            System.out.println("Tuổi k hợp lệ!");
+        }
+
+//        Tăng giảm
+        int i = 1;
+//        i++;
+//        ++i;
+//        i = i + 1;
+
+        int x = 5 + i++;
+        System.out.println("i =" + i); //1  2
+        System.out.println("x =" + x); //6  6
+
+        i = 1;
+        int x1 = 5 + ++i;
+        System.out.println("i =" + i); //2  2
+        System.out.println("x1 =" + x1); //7  7
+
+//        i--;
+        i = 1;
+        int x2 = 5 + i--;
+        System.out.println("i =" + i); //0
+        System.out.println("x2 =" + x2); //6
+
+//        --i;
+        i = 1;
+        int x3 = 5 + --i;
+        System.out.println("i =" + i); //0
+        System.out.println("x3 =" + x3); //5
+
+//        Toán tử gán
+        int a1 = 2;
+        int b1 = 3;
+
+        b1 = a1 + b1;
+        System.out.println("b1 =" + b1);
+
+        b1 = 3;
+        b1 += a1;  // (b1 = a1 + b1)
+        System.out.println("b1 =" + b1);
+
+        // += -= *= /= %=
+        int a2 = 2;
+        int b2 = 5;
+        b2 = a2 - b2;
+        System.out.println("b2 =" + b2);
+
+        b2 = 5;
+        b2 -= a2;  //(b2 = b2 - a2)
+        System.out.println("b2 =" + b2);
+
+        int a3 = 10;
+        double b3 = 5;
+        b3 = a3 / b3;
+        System.out.println("b3 =" + b3);
+
+        b3 = 5;
+        b3 /= a3;  //(b3 = b3 - a3)
+        System.out.println("b3 =" + b3);
     }
 }
